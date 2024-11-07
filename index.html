@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doces Tok</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="./logo.png" alt="" class="logo">
+            <ul>
+                <li><a href="#" id="principal"> principal</a></li>
+                <li><a href="#" id="bolos"> bolos</a></li>
+                <li><a href="#" id="Massas"> Massas</a></li>
+                <li><a href="#" id="Diversos"> Diversos</a></li>
+            </ul>
+            <a href="#" class="btn">Reserve Now</a>
+        </nav>
+        <div class="info">
+            <div>
+                <h2 id="seg">Bolos</h2>
+                <p>60 sabores</p>
+            </div>
+            <div>
+                <h2 id="mph">Doces</h2>
+                <p>Mais de 30 opções</p>
+            </div>
+            <div> 
+                <h2 id="mi">Massas</h2>
+                <p> Mais de 10 sabores</p>
+            </div>
+            <div class="line"></div>
+            <div>
+                <h2 id="model">Doces Tok</h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let header = document.getElementById('header')
+    let principal = document.getElementById('principal')
+    let bolos = document.getElementById('bolos')
+    let Massas = document.getElementById('Massas')
+    let Diversos = document.getElementById('Diversos')
+    let model = document.getElementById('model')
+    let seg = document.getElementById('seg')
+    let mph = document.getElementById('mph')
+    let mi = document.getElementById('mi')
+
+    principal.onclick = function(){
+        header.style.background = "url(./Image-1.jpg)"
+        model.innerHTML = "principal"
+        srg.innerHTML = "Todo os tipos de doces"
+        mph.innerHTML =""
+        mi.innerHTML = ""
+    }
+
+    bolos.onclick = function(){
+        header.style.backgroundImage = "url(./imagem-2.png)"
+        model.innerHTML = "bolos"
+        srg.innerHTML = "3.1 s"
+        mph.innerHTML ="180 mph"
+        mi.innerHTML = "409 mi"
+    }
+    Massas.onclick = function(){
+        header.style.backgroundImage = "url(./image-3.png)"
+        model.innerHTML = "Massas"
+        srg.innerHTML = "2.5 s"
+        mph.innerHTML ="155 mph"
+        mi.innerHTML = "333 mi"
+    }
+    Diversos.onclick = function(){
+        header.style.backgroundImage = "url(./image-4.png)"
+        model.innerHTML = "Diversos"
+        srg.innerHTML = "3.5 s"
+        mph.innerHTML ="195 mph"
+        mi.innerHTML = "520 mi"
+    }
+    
+</script>
+</html>
